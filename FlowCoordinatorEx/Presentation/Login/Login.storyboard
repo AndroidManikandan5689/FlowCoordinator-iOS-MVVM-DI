@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="22505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22504"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--LoginViewController-->
+        <scene sceneID="LzU-dd-I1P">
+            <objects>
+                <viewController storyboardIdentifier="LoginViewController" id="udK-4C-ej7" userLabel="LoginViewController" customClass="LoginViewController" customModule="FlowCoordinatorEx" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="flp-hP-XfI">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="I5i-9p-Pnj">
+                                <rect key="frame" x="142" y="300" width="109" height="35"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="35" id="dGh-s8-Kpz"/>
+                                    <constraint firstAttribute="width" constant="75" id="hdT-r8-rej"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Login Page"/>
+                                <connections>
+                                    <action selector="doLogin:" destination="udK-4C-ej7" eventType="touchUpInside" id="N9p-qn-5SM"/>
+                                    <action selector="navNext:" destination="uD5-cC-pIn" eventType="touchUpInside" id="IwS-cS-rYB"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="Xzw-mW-fAV"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="Xzw-mW-fAV" firstAttribute="trailing" secondItem="I5i-9p-Pnj" secondAttribute="trailing" constant="159" id="0Hn-Fv-kxw"/>
+                            <constraint firstItem="Xzw-mW-fAV" firstAttribute="bottom" secondItem="I5i-9p-Pnj" secondAttribute="bottom" constant="487" id="lzZ-KV-uJe"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="LaX-Qm-QJQ"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ymj-nz-kCg" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <exit id="uD5-cC-pIn" userLabel="Exit" sceneMemberID="exit"/>
+            </objects>
+            <point key="canvasLocation" x="1854" y="-51"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
